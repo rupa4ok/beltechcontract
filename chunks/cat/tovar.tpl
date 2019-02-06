@@ -14,7 +14,7 @@
     <div>
         {$pagetitle}
     </div>
-    <div>
+    <div class="text">
         {$content}
     </div>
     <div>
