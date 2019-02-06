@@ -141,189 +141,17 @@
 
 
                     <div id="shop-all" class="row">
-                        <!-- Product Item #1 -->
-                        <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-best">
-                            <div class="product-img">
-                                <img src="assets/images/shop/grid/1.jpg" alt="product">
-                                <div class="product-hover">
-                                    <div class="product-cart">
-                                        <a class="btn btn-secondary btn-block" href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .product-img end -->
-                            <div class="product-bio">
-                                <h4>
-                                    <a href="#">CST/Berger</a>
-                                </h4>
-                                <p class="product-price">$68.00</p>
-                            </div>
-                            <!-- .product-bio end -->
 
-                        </div>
-                        <!-- .product-item end -->
+                        {$_modx->runSnippet('msProducts@PropertySet', [
+                        'parents' => 4,
+                        'tpl' => '@FILE /chunks/cat/catMain.tpl',
+                        'includeTVs' => 'foto',
+                        'where' => '{"class_key":"msCategory",
+                                    "template":5}',
+                        'depth' => '1',
+                        'limit' => '8'
+                        ])}
 
-                        <!-- Product Item #2 -->
-                        <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-sale">
-                            <div class="product-img">
-                                <img src="assets/images/shop/grid/2.jpg" alt="product">
-                                <div class="product-sale">
-                                    sale
-                                </div>
-                                <div class="product-hover">
-                                    <div class="product-cart">
-                                        <a class="btn btn-secondary btn-block" href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .product-img end -->
-                            <div class="product-bio">
-                                <h4>
-                                    <a href="#">Titan Measures</a>
-                                </h4>
-                                <p class="product-price">
-                                    <span>$40.00</span>
-                                    $32.00</p>
-                            </div>
-                            <!-- .product-bio end -->
-
-                        </div>
-                        <!-- .product-item end -->
-
-                        <!-- Product Item #3 -->
-                        <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-best">
-                            <div class="product-img">
-                                <img src="assets/images/shop/grid/3.jpg" alt="product">
-                                <div class="product-hover">
-                                    <div class="product-cart">
-                                        <a class="btn btn-secondary btn-block" href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .product-img end -->
-                            <div class="product-bio">
-                                <h4>
-                                    <a href="#">Charger/Radio</a>
-                                </h4>
-                                <p class="product-price">$180.00</p>
-                            </div>
-                            <!-- .product-bio end -->
-
-                        </div>
-                        <!-- .product-item end -->
-
-                        <!-- Product Item #4 -->
-                        <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-featured">
-                            <div class="product-img">
-                                <img src="assets/images/shop/grid/4.jpg" alt="product">
-                                <div class="product-hover">
-                                    <div class="product-cart">
-                                        <a class="btn btn-secondary btn-block" href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .product-img end -->
-                            <div class="product-bio">
-                                <h4>
-                                    <a href="#">Plate Compactor</a>
-                                </h4>
-                                <p class="product-price">$230.00</p>
-                            </div>
-                            <!-- .product-bio end -->
-
-                        </div>
-                        <!-- .product-item end -->
-
-                        <!-- Product Item #5 -->
-                        <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-best">
-                            <div class="product-img">
-                                <img src="assets/images/shop/grid/5.jpg" alt="product">
-                                <div class="product-hover">
-                                    <div class="product-cart">
-                                        <a class="btn btn-secondary btn-block" href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .product-img end -->
-                            <div class="product-bio">
-                                <h4>
-                                    <a href="#">Black Tape</a>
-                                </h4>
-                                <p class="product-price">$12.00</p>
-                            </div>
-                            <!-- .product-bio end -->
-
-                        </div>
-                        <!-- .product-item end -->
-
-                        <!-- Product Item #6 -->
-                        <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-best filter-featured">
-                            <div class="product-img">
-                                <img src="assets/images/shop/grid/6.jpg" alt="product">
-                                <div class="product-hover">
-                                    <div class="product-cart">
-                                        <a class="btn btn-secondary btn-block" href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .product-img end -->
-                            <div class="product-bio">
-                                <h4>
-                                    <a href="#">ICS Concrete Saw</a>
-                                </h4>
-                                <p class="product-price">$40.00</p>
-                            </div>
-                            <!-- .product-bio end -->
-
-                        </div>
-                        <!-- .product-item end -->
-
-                        <!-- Product Item #7 -->
-                        <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-featured">
-                            <div class="product-img">
-                                <img src="assets/images/shop/grid/7.jpg" alt="product">
-                                <div class="product-new">
-                                    new
-                                </div>
-                                <div class="product-hover">
-                                    <div class="product-cart">
-                                        <a class="btn btn-secondary btn-block" href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .product-img end -->
-                            <div class="product-bio">
-                                <h4>
-                                    <a href="#">NorthStar Asphalt</a>
-                                </h4>
-                                <p class="product-price">$150.00</p>
-                            </div>
-                            <!-- .product-bio end -->
-
-                        </div>
-                        <!-- .product-item end -->
-
-                        <!-- Product Item #8 -->
-                        <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-best">
-                            <div class="product-img">
-                                <img src="assets/images/shop/grid/8.jpg" alt="product">
-                                <div class="product-hover">
-                                    <div class="product-cart">
-                                        <a class="btn btn-secondary btn-block" href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .product-img end -->
-                            <div class="product-bio">
-                                <h4>
-                                    <a href="#">Keson Fiberglass</a>
-                                </h4>
-                                <p class="product-price">$550.00</p>
-                            </div>
-                            <!-- .product-bio end -->
-
-                        </div>
-                        <!-- .product-item end -->
                     </div>
                     <!-- .row end -->
 
@@ -331,15 +159,10 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <a class="btn btn-secondary" href="#">Больше <i class="fa fa-plus ml-xs"></i></a>
                         </div>
-                        <!-- .col-md-12 end -->
                     </div>
-                    <!-- .row End -->
                 </div>
-                <!-- .container end -->
     </section>
 
-    <!-- Testimonials #1
-    ============================================= -->
     <section id="testimonials" class="testimonial testimonial-1 bg-gray">
         <div class="container">
             <div class="row">
