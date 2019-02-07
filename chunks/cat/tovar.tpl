@@ -15,9 +15,9 @@
         {$pagetitle}
     </div>
     <div class="text">
-        {$content}
+        {$content | ellipsis : 150}
     </div>
-    <div>
+    <div  class="price">
         {$price}
     </div>
 </div>
