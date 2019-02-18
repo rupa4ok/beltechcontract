@@ -2,26 +2,22 @@
 {block 'banner'}
 {/block}
 {block 'main'}
-    <!-- Hero Section
-============================================= -->
     <section id="hero" class="hero hero-4">
 
-        <!-- START REVOLUTION SLIDER 5.0 -->
         <div class="rev_slider_wrapper">
-            <div id="slider1" class="rev_slider"  data-version="5.0">
+            <div id="slider1" class="rev_slider" data-version="5.0">
                 <ul>
 
                     {foreach $_modx->resource['slider'] | fromJSON as $item}
-                        <li data-transition="fadefrombottom" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000">
+                        <li data-transition="fadefrombottom" data-slotamount="default" data-easein="Power4.easeInOut"
+                            data-easeout="Power4.easeInOut" data-masterspeed="2000">
                             <!-- MAIN IMAGE -->
-                            <img src="{$item['image']}"  alt=""  width="1920" height="1280">
-                            <!-- LAYER NR. 1 -->
+                            <img src="{$item['image']}" alt="" width="1920" height="1280">
 
-                            <!-- LAYER NR. 2 -->
                             <div class="tp-caption text-uppercase color-theme"
                                  style="text-align:center; margin-bottom:15px;"
-                                 {$item['config']}
-                                  style="font-family: montserrat; ">
+                                    {$item['config']}
+                                 style="font-family: montserrat; ">
                                 {$item['title']}
                             </div>
 
@@ -43,16 +39,15 @@
                                  data-lineheight="['26','26','25','25']"
                                  data-fontweight="['700','500','500','500']"
                                  data-color="#fff" style="font-family: raleway; text-align:center">
-                                <a class="btn btn-primary" style="margin-top: 50px;" href="{$item['href']}" >Подробнее</a>
+                                <a class="btn btn-primary" style="margin-top: 50px;"
+                                   href="{$item['href']}">Подробнее</a>
                             </div>
                         </li>
                     {/foreach}
 
                 </ul>
             </div>
-            <!-- END REVOLUTION SLIDER -->
 
-            <!-- Widget Bottom -->
             <div class="container widget-bottom widgets-contact hidden-xs">
                 <div class="row">
                     <ul class="list-inline">
@@ -79,10 +74,11 @@
                         <!-- .widget end -->
 
                         <li class="col-sm-4 col-md-3 widget">
-                            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#model-quote" id="modelquote">Задать вопрос</a>
+                            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#model-quote"
+                               id="modelquote">Задать вопрос</a>
 
-                            <!-- Modal -->
-                            <div class="modal fade model-quote" id="model-quote" tabindex="-1" role="dialog" aria-labelledby="modelquote">
+                            <div class="modal fade model-quote" id="model-quote" tabindex="-1" role="dialog"
+                                 aria-labelledby="modelquote">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -100,12 +96,19 @@
                                         </div>
                                         <!-- .model-header end -->
                                         <div class="modal-body">
-                                            <form id="pop-quote-form" action="assets/php/sendpopquote.php" method="post">
-                                                <input type="text" class="form-control" name="quote-name" id="name" placeholder="Ваше имя" required/>
-                                                <input type="email" class="form-control" name="quote-email" id="email" placeholder="E-mail" required/>
-                                                <input type="text" class="form-control" name="quote-telephone" id="telephone" placeholder="Телефон" required/>
-                                                <textarea class="form-control" name="quote-message"  id="quote" placeholder="Quote Details" rows="2" required></textarea>
-                                                <button type="submit" class="btn btn-primary btn-black btn-block">Отправить</button>
+                                            <form id="pop-quote-form" action="assets/php/sendpopquote.php"
+                                                  method="post">
+                                                <input type="text" class="form-control" name="quote-name" id="name"
+                                                       placeholder="Ваше имя" required/>
+                                                <input type="email" class="form-control" name="quote-email" id="email"
+                                                       placeholder="E-mail" required/>
+                                                <input type="text" class="form-control" name="quote-telephone"
+                                                       id="telephone" placeholder="Телефон" required/>
+                                                <textarea class="form-control" name="quote-message" id="quote"
+                                                          placeholder="Quote Details" rows="2" required></textarea>
+                                                <button type="submit" class="btn btn-primary btn-black btn-block">
+                                                    Отправить
+                                                </button>
                                                 <!--Alert Message-->
                                                 <div id="pop-quote-result" class="mt-xs">
                                                 </div>
@@ -124,19 +127,10 @@
         </div>
         <!-- END OF SLIDER WRAPPER -->
     </section>
-
-    <!-- #hero end -->
-
-    <!-- Shop Filter
-    ============================================= -->
     <section id="shop" class="shop-4 pt-0">
         <div class="container">
             <div class="row">
-
-{include 'file:chunks/_sidebar.tpl'}
-
-                <!-- Projects Filter
-                ============================================= -->
+                {include 'file:chunks/_sidebar.tpl'}
                 <div class="col-xs-12 col-sm-12 col-md-9 shop-filter">
 
 
@@ -162,7 +156,6 @@
                     </div>
                 </div>
     </section>
-
     <section id="testimonials" class="testimonial testimonial-1 bg-gray">
         <div class="container">
             <div class="row">
@@ -193,10 +186,6 @@
         <!-- .container end -->
     </section>
     <!-- #testimonials end -->
-
-
-
-
     <section id="shotcode-1" class="shotcode-1 about-home-2 text-center-xs text-center-sm">
         <div class="container">
             <div class="row">
@@ -220,7 +209,7 @@
                 <!-- .col-md-12 end -->
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <h3 class="color-heading mb-md">{4 | resource : 'content'}</h3>
-                        <a class="btn btn-secondary mt-50 mb-30-xs" href="{4 | resource : 'uri'}">Продукция</a>
+                    <a class="btn btn-secondary mt-50 mb-30-xs" href="{4 | resource : 'uri'}">Продукция</a>
                 </div>
                 <!-- .col-md-6 end -->
                 <div class="col-xs-12 col-sm-12 col-md-6">
@@ -257,24 +246,10 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                     </div>
-                    <!-- .row end -->
                 </div>
-                <!-- .col-md-6 end -->
             </div>
-            <!-- .row end -->
         </div>
-        <!-- .container end -->
     </section>
-
-
-
-
     </div>
-    <!-- .projects-filter end -->
     </div>
-    <!-- .row end -->
-    <!-- Projects Item
-    ============================================= -->
-
-    <!-- #clients end-->
 {/block}

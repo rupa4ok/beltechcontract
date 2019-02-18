@@ -20,7 +20,7 @@
         </h3>
     </div>
     <div class="entry-content">
-        <p>{$content}</p>
+        <p>{$content | ellipsis : 200}</p>
         <a class="entry-more" href="{$id | url}"><i class="fa fa-plus"></i>
             <span>Подробнее</span>
         </a>
