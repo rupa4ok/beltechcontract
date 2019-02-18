@@ -23,7 +23,8 @@
                                     </li>
                                     <li class="entry-date">
                                         <span>JAN</span>
-                                        25 </li>
+                                        25
+                                    </li>
                                 </ul>
                                 <ul class="pull-right text-right">
                                     <li class="entry-cat"> In:

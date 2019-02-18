@@ -1,7 +1,4 @@
-
 <footer id="footer" class="footer-1">
-    <!-- Contact Bar
-    ============================================= -->
     <div class="container footer-widgtes">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -45,12 +42,7 @@
             </div>
             <!-- .col-md-12 end -->
         </div>
-        <!-- .row end -->
     </div>
-    <!-- .container end -->
-
-    <!-- Widget Section
-    ============================================= -->
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 widgets-links">
@@ -63,13 +55,13 @@
                         <p class="mb-0">[[++footer_text]]</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 widget-navigation text-center-xs mb-30-xs">
+                <div class="col-xs-12 col-sm-6 col-md-8 widget-navigation text-center-xs mb-30-xs">
                     <h5 class="text-capitalize text-white">Меню</h5>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             {'pdoMenu'|snippet:[
                             'parents' => '0',
-                            'outerClass' => 'list-unstyled text-capitalize',
+                            'outerClass' => 'list-unstyled text-capitalize footerMenu',
                             'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
                             'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
                             'parentClass' => 'tree',
@@ -81,11 +73,6 @@
             </div>
         </div>
     </div>
-    <!-- Social bar
-    ============================================= -->
-
-    <!-- Copyrights
-    ============================================= -->
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 copyrights text-center">
