@@ -6,10 +6,8 @@
         <div class="rev_slider_wrapper">
             <div id="slider1" class="rev_slider" data-version="5.0">
                 <ul>
-
                     {foreach $_modx->resource['slider'] | fromJSON as $item}
-                        <li data-transition="fadefrombottom" data-slotamount="default" data-easein="Power4.easeInOut"
-                            data-easeout="Power4.easeInOut" data-masterspeed="2000">
+                        <li data-transition="fadefrombottom" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000">
                             <img src="{$item['image']}" alt="" width="1920" height="1280">
                             <div class="tp-caption text-uppercase color-theme"
                                  style="text-align:center; margin-bottom:15px;"
@@ -39,7 +37,6 @@
                             </div>
                         </li>
                     {/foreach}
-
                 </ul>
             </div>
 
@@ -55,7 +52,6 @@
                                 <p class="font-heading text-white">btk07@mail.ru</p>
                             </div>
                         </li>
-                        <!-- .widget end -->
 
                         <li class="col-sm-4 col-md-3 widget">
                             <div class="widget-contact-icon pull-left">

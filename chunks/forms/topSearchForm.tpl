@@ -10,14 +10,5 @@
         &tpl=`tpl.mSearch2.ac`
         &limit=`10`
         ]]
-        <form class="search-form">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Введите Ваш запрос">
-                <span class="input-group-btn">
-								<button class="btn" type="button"><i class="fa fa-search"></i></button>
-								</span>
-            </div>
-            <!-- /input-group -->
-        </form>
     </div>
 </div>
