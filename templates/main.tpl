@@ -49,7 +49,7 @@
                             </div>
                             <div class="widget-contact-info">
                                 <p class="text-capitalize">E-mail</p>
-                                <p class="font-heading text-white">btk07@mail.ru</p>
+                                <p class="font-heading text-white">[[++email]]</p>
                             </div>
                         </li>
 
