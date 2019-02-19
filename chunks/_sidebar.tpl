@@ -1,6 +1,6 @@
 <div class="col-xs-12 col-sm-12 col-md-3 sidebar sidebar-full">
 
-    {include 'file:chunks/forms/searchForm.tpl'}
+    {include 'file:chunks/forms/leftSearchForm.tpl'}
 
     <div class="widget widget-categories">
         <div class="widget-title">

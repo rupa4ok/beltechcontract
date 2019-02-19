@@ -37,7 +37,7 @@
                 'level' => '1'
                 ]}
 
-                {include 'file:chunks/forms/formTopMenu.tpl'}
+                {include 'file:chunks/forms/topSearchForm.tpl'}
 
             </div>
             <!-- /.navbar-collapse -->
