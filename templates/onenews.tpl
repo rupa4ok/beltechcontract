@@ -45,24 +45,14 @@
                                     <h3>Framing and Insulating Walls In Warehouse and Corporate Buildings</h3>
                                 </a>
                             </div>
-                            <!-- .entry-title end -->
+
                             <div class="entry-content">
                                 {$_modx->resource.content}
                             </div>
-                            <!-- .entry-content end -->
-
-
                         </div>
-                        <!-- .entry end -->
-
                     </div>
-                    <!-- .row end -->
-
                 </div>
-                <!-- entry articles end -->
             </div>
-            <!-- .row end -->
         </div>
-        <!-- .container end -->
     </section>
 {/block}

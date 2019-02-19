@@ -214,37 +214,15 @@
                 <!-- .col-md-6 end -->
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="row">
+                        {foreach $_modx->resource['company'] | fromJSON as $item}
                         <div class="col-xs-12 col-sm-6 col-md-6 feature feature-1">
                             <div class="feature-icon">
-                                <i class="lnr lnr-calendar-full"></i>
+                                {$item['icon']}
                             </div>
-                            <h4 class="text-uppercase">Всегда доступны</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="text-uppercase">{$item['title']}</h4>
+                            <p>{$item['content']}</p>
                         </div>
-                        <!-- .col-md-6 end -->
-                        <div class="col-xs-12 col-sm-6 col-md-6 feature feature-1">
-                            <div class="feature-icon">
-                                <i class="lnr lnr-briefcase"></i>
-                            </div>
-                            <h4 class="text-uppercase">Квалифицированные специалисты</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                        <!-- .col-md-6 end -->
-                        <div class="col-xs-12 col-sm-6 col-md-6 feature feature-1 mb-0">
-                            <div class="feature-icon">
-                                <i class="lnr lnr-database"></i>
-                            </div>
-                            <h4 class="text-uppercase">Акции</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                        <!-- .col-md-6 end -->
-                        <div class="col-xs-12 col-sm-6 col-md-6 feature  feature-1 mb-0">
-                            <div class="feature-icon">
-                                <i class="lnr lnr-cart"></i>
-                            </div>
-                            <h4 class="text-uppercase">Лучшие предложения</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+                        {/foreach}
                     </div>
                 </div>
             </div>
