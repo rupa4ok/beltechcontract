@@ -1,23 +1,7 @@
 <div class="col-xs-12 col-sm-12 col-md-3 sidebar sidebar-full">
-    <!-- .sidebar end -->
-    <!-- Search
-    ============================================= -->
-    <div class="widget widget-search">
-        <div class="widget-content">
-            <form class="form-search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Введите Ваш запрос">
-                    <span class="input-group-btn">
-								<button class="btn" type="button"><i class="fa fa-search"></i></button>
-								</span>
-                </div>
-                <!-- /input-group -->
-            </form>
-        </div>
-    </div>
 
-    <!-- Categories
-    ============================================= -->
+    {include 'file:chunks/forms/searchForm.tpl'}
+
     <div class="widget widget-categories">
         <div class="widget-title">
             <h3>Каталог</h3>
@@ -41,12 +25,7 @@
         </div>
     </div>
 
-
-    <!-- Tag Clouds
-    ============================================= -->
     <div class="widget widget-tags">
-
-
         <div class="widget widget-download">
             <div class="widget-title">
                 <h3>Прайс-лист</h3>
@@ -62,9 +41,6 @@
                         </div>
                     </a>
                 </div>
-                <!-- .download-pdf end -->
-
-                <!-- .download-pdf end -->
             </div>
         </div>
     </div>

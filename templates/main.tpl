@@ -3,7 +3,6 @@
 {/block}
 {block 'main'}
     <section id="hero" class="hero hero-4">
-
         <div class="rev_slider_wrapper">
             <div id="slider1" class="rev_slider" data-version="5.0">
                 <ul>
@@ -11,17 +10,13 @@
                     {foreach $_modx->resource['slider'] | fromJSON as $item}
                         <li data-transition="fadefrombottom" data-slotamount="default" data-easein="Power4.easeInOut"
                             data-easeout="Power4.easeInOut" data-masterspeed="2000">
-                            <!-- MAIN IMAGE -->
                             <img src="{$item['image']}" alt="" width="1920" height="1280">
-
                             <div class="tp-caption text-uppercase color-theme"
                                  style="text-align:center; margin-bottom:15px;"
                                     {$item['config']}
                                  style="font-family: montserrat; ">
                                 {$item['title']}
                             </div>
-
-                            <!-- LAYER NR. 3 -->
                             <div class="tp-caption text-uppercase"
                                  data-x="center" data-hoffset="0"
                                  data-y="center" data-voffset="80"
@@ -71,8 +66,6 @@
                                 <p class="text-capitalize font-heading text-white">+375 (44) 5383624</p>
                             </div>
                         </li>
-                        <!-- .widget end -->
-
                         <li class="col-sm-4 col-md-3 widget">
                             <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#model-quote"
                                id="modelquote">Задать вопрос</a>
@@ -94,61 +87,31 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- .model-header end -->
-                                        <div class="modal-body">
-                                            <form id="pop-quote-form" action="assets/php/sendpopquote.php"
-                                                  method="post">
-                                                <input type="text" class="form-control" name="quote-name" id="name"
-                                                       placeholder="Ваше имя" required/>
-                                                <input type="email" class="form-control" name="quote-email" id="email"
-                                                       placeholder="E-mail" required/>
-                                                <input type="text" class="form-control" name="quote-telephone"
-                                                       id="telephone" placeholder="Телефон" required/>
-                                                <textarea class="form-control" name="quote-message" id="quote"
-                                                          placeholder="Quote Details" rows="2" required></textarea>
-                                                <button type="submit" class="btn btn-primary btn-black btn-block">
-                                                    Отправить
-                                                </button>
-                                                <!--Alert Message-->
-                                                <div id="pop-quote-result" class="mt-xs">
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <!-- .model-body end -->
+                                        {include 'file:chunks/forms/popupForm.tpl'}
                                     </div>
                                 </div>
                             </div>
-                            <!-- .model-quote end -->
                         </li>
                     </ul>
                 </div>
             </div>
-            <!-- .container end -->
         </div>
-        <!-- END OF SLIDER WRAPPER -->
     </section>
     <section id="shop" class="shop-4 pt-0">
         <div class="container">
             <div class="row">
                 {include 'file:chunks/_sidebar.tpl'}
                 <div class="col-xs-12 col-sm-12 col-md-9 shop-filter">
-
-
                     <div id="shop-all" class="row">
-
                         {$_modx->runSnippet('msProducts@PropertySet', [
                         'parents' => 4,
                         'tpl' => '@FILE /chunks/cat/catMain.tpl',
                         'includeTVs' => 'foto',
-                        'where' => '{"class_key":"msCategory",
-                                    "template":5}',
+                        'where' => '{"class_key":"msCategory", "template":5}',
                         'depth' => '1',
                         'limit' => '8'
                         ])}
-
                     </div>
-                    <!-- .row end -->
-
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <a class="btn btn-secondary" href="#">Больше <i class="fa fa-plus ml-xs"></i></a>
@@ -166,26 +129,19 @@
                             <h2>Акции</h2>
                         </div>
                     </div>
-                    <!-- .heading end -->
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div id="testimonial-oc" class="testimonial-carousel">
-
                         {'!pdoPage' | snippet : [
                         'parents' => 5,
                         'includeContent' => '1',
                         'tpl' => '@FILE /chunks/cat/promo.tpl'
                         ]}
-
                     </div>
                 </div>
-                <!-- .col-md-12 end -->
             </div>
-            <!-- .row end -->
         </div>
-        <!-- .container end -->
     </section>
-    <!-- #testimonials end -->
     <section id="shotcode-1" class="shotcode-1 about-home-2 text-center-xs text-center-sm">
         <div class="container">
             <div class="row">
@@ -202,7 +158,6 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
 
-
                         </div>
                     </div>
                 </div>
@@ -215,13 +170,13 @@
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="row">
                         {foreach $_modx->resource['company'] | fromJSON as $item}
-                        <div class="col-xs-12 col-sm-6 col-md-6 feature feature-1">
-                            <div class="feature-icon">
-                                {$item['icon']}
+                            <div class="col-xs-12 col-sm-6 col-md-6 feature feature-1">
+                                <div class="feature-icon">
+                                    {$item['icon']}
+                                </div>
+                                <h4 class="text-uppercase">{$item['title']}</h4>
+                                <p>{$item['content']}</p>
                             </div>
-                            <h4 class="text-uppercase">{$item['title']}</h4>
-                            <p>{$item['content']}</p>
-                        </div>
                         {/foreach}
                     </div>
                 </div>

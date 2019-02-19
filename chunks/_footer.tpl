@@ -10,11 +10,9 @@
                             </div>
                             <div class="widget-contact-info">
                                 <p class="text-capitalize text-white">Адрес</p>
-                                <p class="text-capitalize font-heading">[[++adress]]
-                                </p>
+                                <p class="text-capitalize font-heading">[[++adress]]</p>
                             </div>
                         </div>
-                        <!-- .widget end -->
                         <div class="col-xs-12 col-sm-12 col-md-4 widget">
                             <div class="widget-contact-icon pull-left">
                                 <i class="lnr lnr-envelope"></i>
@@ -24,7 +22,6 @@
                                 <p class="text-capitalize font-heading">[[++email]]</p>
                             </div>
                         </div>
-                        <!-- .widget end -->
                         <div class="col-xs-12 col-sm-12 col-md-4 widget">
                             <div class="widget-contact-icon pull-left">
                                 <i class="lnr lnr-phone"></i>
@@ -34,13 +31,9 @@
                                 <p class="text-capitalize font-heading">[[++phone]]</p>
                             </div>
                         </div>
-                        <!-- .widget end -->
                     </div>
-                    <!-- .row end -->
                 </div>
-                <!-- .widget-contact end -->
             </div>
-            <!-- .col-md-12 end -->
         </div>
     </div>
     <div class="container">
