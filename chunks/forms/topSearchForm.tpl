@@ -4,6 +4,12 @@
         <span class="title">Поиск</span>
     </div>
     <div class="search-box">
+        [[mSearchForm?
+        &element=`pdoResources`
+        &tplForm=`tpl.mSearch2.form`
+        &tpl=`tpl.mSearch2.ac`
+        &limit=`10`
+        ]]
         <form class="search-form">
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Введите Ваш запрос">
