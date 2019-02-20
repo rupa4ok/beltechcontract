@@ -4,7 +4,7 @@
         <div class="container">
             <div id="projects-all" class="row" style="position: relative; height: 1200px;">
 
-                <h4>item1</h4>
+                <h4>{$pagetitle}</h4>
 
             </div>
         </div>
