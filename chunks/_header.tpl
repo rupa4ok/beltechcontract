@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="logo" href="index.html">
-                    <img style="height:80px;" src="assets/img/btk-lo.png" alt="БЕЛТЕХКОНТРАКТ">
+                    <img style="height:80px;" src="assets/img/btk-logo.png" alt="БЕЛТЕХКОНТРАКТ">
                 </a>
             </div>
 

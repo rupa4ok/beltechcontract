@@ -7,7 +7,8 @@
             <div id="slider1" class="rev_slider" data-version="5.0">
                 <ul>
                     {foreach $_modx->resource['slider'] | fromJSON as $item}
-                        <li data-transition="fadefrombottom" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000">
+                        <li data-transition="fadefrombottom" data-slotamount="default" data-easein="Power4.easeInOut"
+                            data-easeout="Power4.easeInOut" data-masterspeed="2000">
                             <img src="{$item['image']}" alt="" width="1920" height="1280">
                             <div class="tp-caption text-uppercase color-theme"
                                  style="text-align:center; margin-bottom:15px;"
@@ -39,81 +40,23 @@
                     {/foreach}
                 </ul>
             </div>
-
-            <div class="container widget-bottom widgets-contact hidden-xs">
-                <div class="row">
-                    <ul class="list-inline">
-                        <li class="col-sm-4 col-md-3 col-md-offset-3 widget">
-                            <div class="widget-contact-icon pull-left">
-                                <i class="lnr lnr-envelope"></i>
-                            </div>
-                            <div class="widget-contact-info">
-                                <p class="text-capitalize">E-mail</p>
-                                <p class="font-heading text-white">[[++email]]</p>
-                            </div>
-                        </li>
-
-                        <li class="col-sm-4 col-md-3 widget">
-                            <div class="widget-contact-icon pull-left">
-                                <i class="lnr lnr-phone"></i>
-                            </div>
-                            <div class="widget-contact-info">
-                                <p class="text-capitalize">Телефон</p>
-                                <p class="text-capitalize font-heading text-white">+375 (44) 5383624</p>
-                            </div>
-                        </li>
-                        <li class="col-sm-4 col-md-3 widget">
-                            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#model-quote"
-                               id="modelquote">Задать вопрос</a>
-
-                            <div class="modal fade model-quote" id="model-quote" tabindex="-1" role="dialog"
-                                 aria-labelledby="modelquote">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                            <div class="model-icon">
-                                                <i class="lnr lnr-apartment"></i>
-                                            </div>
-                                            <div class="model-divider">
-                                                <div class="model-title">
-                                                    <p>Задать вопрос</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {include 'file:chunks/forms/popupForm.tpl'}
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+        </div>
+    </section>
+    <section class="testimonial testimonial-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="">
+                        {'!pdoPage' | snippet : [
+                        'parents' => 4,
+                        'includeContent' => '1',
+                        'depth' => 0,
+                        'tpl' => '@FILE /chunks/cat/cat.tpl'
+                        ]}
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="shop" class="shop-4 pt-0">
-        <div class="container">
-            <div class="row">
-                {include 'file:chunks/_sidebar.tpl'}
-                <div class="col-xs-12 col-sm-12 col-md-9 shop-filter">
-                    <div id="shop-all" class="row">
-                        {$_modx->runSnippet('msProducts@PropertySet', [
-                        'parents' => 4,
-                        'tpl' => '@FILE /chunks/cat/catMain.tpl',
-                        'includeTVs' => 'foto',
-                        'where' => '{"class_key":"msCategory", "template":5}',
-                        'depth' => '1',
-                        'limit' => '8'
-                        ])}
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                            <a class="btn btn-secondary" href="#">Больше <i class="fa fa-plus ml-xs"></i></a>
-                        </div>
-                    </div>
-                </div>
     </section>
     <section id="testimonials" class="testimonial testimonial-1 bg-gray">
         <div class="container">

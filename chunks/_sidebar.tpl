@@ -25,23 +25,4 @@
         </div>
     </div>
 
-    <div class="widget widget-tags">
-        <div class="widget widget-download">
-            <div class="widget-title">
-                <h3>Прайс-лист</h3>
-            </div>
-            <div class="widget-content">
-                <div class="download download-pdf">
-                    <a href="#">
-                        <div class="download-desc">
-                            <p style="color:fff !imortant; margin-top:25px; margin-left:10px;">Прайс-лист</p>
-                        </div>
-                        <div class="download-icon">
-                            <i class="fa fa-download"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
